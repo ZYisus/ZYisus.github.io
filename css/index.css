@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+    background-color: #ecaecdd2;
+    font-family: 'poppins', sans-serif;
+}
+
+.titulo1{
+    position: absolute; /* Cambiado a absolute */
+    top: 80px; /* Ajusta la posición vertical según tus necesidades */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    text-align: center;
+    color: #23af7e;
+}
+/* titulos css xd */
+
+.titulo4{
+    position: absolute; 
+    top: 30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #000000;
+    
+}
+
+img{
+    position: fixed; 
+    top: 100px;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 200px;
+     z-index: -1;
+}
+
+
+
+.login-box{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: 40ch;
+    width: 380px;
+    padding: 40px;
+    transform: translate(-50%, -55%);
+    background: linear-gradient( 90deg,
+     rgba(203,18,133,1) 0%,
+    rgb(83, 43, 170) 70%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color:#fff;
+    text-align: center;
+}
+
+.login-box .user-box{
+    position: relative;
+}
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #adadad;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 15px;
+}
+
+button{
+    position: absolute;
+    height: 45px;
+    width: 40%;
+    left: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    color: #474646;
+    font-size: 15px;
+    background: rgb(235, 238, 235);
+    outline: none;
+}
+
+.holo{
+    position: absolute;
+    height: 45px;
+    width: 40%;
+    left: 210px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    color: #474646;
+    font-size: 15px;
+    background: rgb(235, 238, 235);
+    outline: none;
+}
+
+.holo:hover{
+    background: #03e9f0;
+    color: #ffffff;
+    box-shadow: 0 0 5px #03e9f0,
+    0 0 10px #03e9f0, 0 0 25px #03e9f0,
+    0 0 50px #03e9f0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .login-box{
+        width: 300px;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+   
+    h1{
+        font-size: 20px;
+        top: 20px;
+    }
+    h4{
+        text-align: center;
+        font-size: 12px;
+    
+    }
+
+    img {
+        top: 70px; 
+    }
+
+    button{
+        width: 40%;
+        left: 20px;
+    }
+    .holo{
+        width: 40%;
+        left: 160px;
+  
+    }
+  }
