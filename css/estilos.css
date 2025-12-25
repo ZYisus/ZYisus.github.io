@@ -1,0 +1,147 @@
+/* =========================
+   RESET GENERAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #fff6eb;
+  font-family: 'Pacifico', cursive;
+  overflow-x: hidden;
+}
+
+/* =========================
+   SECCIÓN PRINCIPAL
+========================= */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: url('../img/fondo.jpg');
+  background-size: contain;       /* NO recorta la imagen */
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #fff6eb;
+}
+
+/* =========================
+   MENÚ SUPERIOR
+========================= */
+.menu {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(255, 230, 200, 0.95);
+  padding: 18px 30px;
+  border-radius: 45px;
+
+  display: flex;
+  gap: 16px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+.menu a {
+  text-decoration: none;
+  background: #fffaf3;
+  color: #c07a3f;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-size: 18px;
+  box-shadow: inset 0 0 0 2px #f3c892;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background: #f3c892;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   TEXTO CENTRAL
+========================= */
+.texto-central {
+  position: absolute;
+  top: 30%;              /* Ajusta altura visual */
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: #b06a3c;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.texto-central h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.texto-central p {
+  font-family: 'Fredoka', cursive;
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 14px 22px;
+  }
+
+  .menu a {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .texto-central h1 {
+    font-size: 28px;
+  }
+
+  .texto-central p {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   RESPONSIVE MÓVIL
+========================= */
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 30px;
+  }
+
+  .menu a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .texto-central {
+    top: 65%;
+  }
+
+  .texto-central h1 {
+    font-size: 24px;
+  }
+
+  .texto-central p {
+    font-size: 16px;
+  }
+}

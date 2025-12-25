@@ -1,0 +1,100 @@
+:root {
+  --bg: #FFF4E6;
+  --text-main: #9C6B3D;
+  --text-soft: #B08968;
+  --button: #8B5E34;
+  --button-hover: #A47148;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+    text-align: center;
+  background-image: url("../img/gato.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* 🔹 CLAVE */
+  
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  width: 100%;
+  min-height: 100vh; /* ocupa toda la pantalla */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Baloo 2', cursive;
+  color: var(--text-main);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 2rem;
+}
+
+.cat-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cat-container img {
+  width: 220px;
+  max-width: 60vw;
+  animation: float 3s ease-in-out infinite;
+}
+
+.subtitle {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.btn-enter {
+  margin-top: 2rem;
+  background: var(--button);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.btn-enter:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .btn-enter {
+    font-size: 0.95rem;
+  }
+}
