@@ -5,8 +5,9 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     const pass = document.getElementById("pass").value.trim();
 
     if (usuario === "luciana" && pass === "luciana") {
-        window.location.href = "gato.html";
+        window.location.href = "../html/gato.html";
     } else {
         alert("Usuario o contraseña incorrectos 🌙");
     }
 });
+
