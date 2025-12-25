@@ -54,7 +54,7 @@ body {
 .sent {
   width: 100%;
   min-height: 100vh;
-  background-image: url('/gato/img/fondo3.jpg');
+  background-image: url('../img/fondo3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -126,3 +126,4 @@ body {
   color: #574545;
   line-height: 1.4;
 }
+
